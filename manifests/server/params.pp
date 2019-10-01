@@ -1,12 +1,10 @@
 # == Class samba::server::params
 #
 class samba::server::params {
-  $service_name = undef
-  $nmbd_name = undef
-
   case $::osfamily {
     'Redhat': {
       $service_name = 'smb'
+      $nmbd_name = undef
     }
     'Debian': {
       $service_name = 'smbd'
