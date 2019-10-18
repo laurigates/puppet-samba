@@ -4,3 +4,5 @@ log/
 Gemfile.lock
 spec/fixtures/
 .vagrant/
+vendor/
+.bundle
